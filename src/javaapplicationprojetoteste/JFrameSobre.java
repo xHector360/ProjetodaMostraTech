@@ -44,7 +44,7 @@ public class JFrameSobre extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
         jLabelTitulo.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jLabelTitulo.setText("Sobre nós");
+        jLabelTitulo.setText("Sobre");
 
         jLabeldevelopers.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabeldevelopers.setIcon(new javax.swing.ImageIcon("C:\\Users\\info2410\\Documents\\NetBeansProjects\\Icons\\team(1).png")); // NOI18N
@@ -78,9 +78,6 @@ public class JFrameSobre extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(354, 354, 354)
-                        .addComponent(jLabelTitulo))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabeldevelopers))
                     .addComponent(jLabelbusiness1)
@@ -90,7 +87,10 @@ public class JFrameSobre extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(385, 385, 385)
-                        .addComponent(jButtonfechar)))
+                        .addComponent(jButtonfechar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(392, 392, 392)
+                        .addComponent(jLabelTitulo)))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(

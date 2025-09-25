@@ -27,19 +27,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabelCadastro = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextFieldnome = new javax.swing.JTextField();
-        jPasswordFieldsenha = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabelResposta = new javax.swing.JLabel();
-        jButtonEntrar = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButtonfuncio = new javax.swing.JButton();
-        jButtonProf = new javax.swing.JButton();
-        jButtonLimpar = new javax.swing.JButton();
+        jLabelTitulo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuCad = new javax.swing.JMenu();
         jMenuItemCadAluno = new javax.swing.JMenuItem();
@@ -53,155 +41,24 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jLabelCadastro.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jLabelCadastro.setText("Bem vindo ao SYSFREQ AND BENEFIT!!");
-
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setText("Nome do usuário:");
-
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel2.setText("Senha:");
-
-        jTextFieldnome.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-
-        jPasswordFieldsenha.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel3.setText("Não possui uma conta? Cadastre-se agora!!");
-
-        jLabelResposta.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-
-        jButtonEntrar.setBackground(new java.awt.Color(204, 255, 204));
-        jButtonEntrar.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButtonEntrar.setForeground(new java.awt.Color(0, 0, 153));
-        jButtonEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplicationprojetoteste/entrar.png"))); // NOI18N
-        jButtonEntrar.setText("Entrar");
-        jButtonEntrar.setActionCommand("Entrar");
-        jButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEntrarActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-
-        jButton1.setBackground(new java.awt.Color(204, 255, 204));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 153));
-        jButton1.setText("Aluno");
-        jButton1.setToolTipText("");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButtonfuncio.setBackground(new java.awt.Color(204, 255, 204));
-        jButtonfuncio.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButtonfuncio.setForeground(new java.awt.Color(0, 0, 153));
-        jButtonfuncio.setText("Funcionário");
-        jButtonfuncio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonfuncioActionPerformed(evt);
-            }
-        });
-
-        jButtonProf.setBackground(new java.awt.Color(204, 255, 204));
-        jButtonProf.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButtonProf.setForeground(new java.awt.Color(0, 0, 153));
-        jButtonProf.setText("Professor");
-        jButtonProf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonProfActionPerformed(evt);
-            }
-        });
-
-        jButtonLimpar.setBackground(new java.awt.Color(204, 255, 204));
-        jButtonLimpar.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButtonLimpar.setForeground(new java.awt.Color(0, 0, 153));
-        jButtonLimpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplicationprojetoteste/limpar.png"))); // NOI18N
-        jButtonLimpar.setText("Limpar");
-        jButtonLimpar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonLimparActionPerformed(evt);
-            }
-        });
+        jLabelTitulo.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabelTitulo.setText("Bem vindo ao SYSFREQ AND BENEFIT!!");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(87, 87, 87)
-                                .addComponent(jLabel1)
-                                .addGap(45, 45, 45))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel2)
-                                .addGap(104, 104, 104)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextFieldnome)
-                            .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(jLabelCadastro))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(289, 289, 289)
-                        .addComponent(jLabel5))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(174, 174, 174)
-                            .addComponent(jButton1)
-                            .addGap(34, 34, 34)
-                            .addComponent(jButtonfuncio)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButtonProf))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(164, 164, 164)
-                            .addComponent(jLabel3)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(280, 280, 280)
-                        .addComponent(jButtonEntrar)
-                        .addGap(34, 34, 34)
-                        .addComponent(jButtonLimpar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(364, 364, 364)
-                        .addComponent(jLabelResposta)))
+                .addGap(109, 109, 109)
+                .addComponent(jLabelTitulo)
                 .addContainerGap(208, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabelCadastro)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextFieldnome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(20, 20, 20)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonEntrar)
-                    .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                .addComponent(jLabelResposta)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel3)
-                .addGap(28, 28, 28)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButtonfuncio)
-                    .addComponent(jButtonProf))
-                .addGap(55, 55, 55))
+                .addComponent(jLabelTitulo)
+                .addContainerGap(406, Short.MAX_VALUE))
         );
 
         jMenuCad.setText("Cadastro");
@@ -291,39 +148,9 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
         new JFrameCadProf().setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
-    private void jButtonfuncioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfuncioActionPerformed
- new JFrameCadFuncio().setVisible(true);     
-    }//GEN-LAST:event_jButtonfuncioActionPerformed
-
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         new JFrameSobre().setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      new JFrameCadAluno().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButtonProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonProfActionPerformed
-        new JFrameCadProf().setVisible(true);
-    }//GEN-LAST:event_jButtonProfActionPerformed
-
-    private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
-       jTextFieldnome.setText(null);
-     jPasswordFieldsenha.setText(null);
-    }//GEN-LAST:event_jButtonLimparActionPerformed
-
-    private void jButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEntrarActionPerformed
-      //Esse código é somente temporário para testar a funcionalidade da tela de login
-      
-        String nome = jTextFieldnome.getText();
-      String senha = jPasswordFieldsenha.getText();
-      
-      if (nome.equals("Admin") && senha.equals("Debug123")){
-      jLabelResposta.setText("Bem-Vindo");
-}else{
-          jLabelResposta.setText("Usuário ou senha incorretos");
-      }
-    }//GEN-LAST:event_jButtonEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -361,17 +188,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButtonEntrar;
-    private javax.swing.JButton jButtonLimpar;
-    private javax.swing.JButton jButtonProf;
-    private javax.swing.JButton jButtonfuncio;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabelCadastro;
-    private javax.swing.JLabel jLabelResposta;
+    private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuCad;
     private javax.swing.JMenuItem jMenuItem2;
@@ -381,7 +198,5 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemSair;
     private javax.swing.JMenu jMenuSobre;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordFieldsenha;
-    private javax.swing.JTextField jTextFieldnome;
     // End of variables declaration//GEN-END:variables
 }
