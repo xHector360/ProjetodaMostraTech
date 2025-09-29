@@ -45,16 +45,16 @@ public class JFrameLogin extends javax.swing.JFrame {
         jRadioButtonfuncbenefi = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
         jLabelnome.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabelnome.setText("Nome do usuário:");
 
-        jTextFieldnome.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jTextFieldnome.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
-        jPasswordFieldsenha.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jPasswordFieldsenha.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
         jLabelsenha.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabelsenha.setText("Senha:");
@@ -139,94 +139,89 @@ public class JFrameLogin extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jRadioButtonaluno)
+                    .addComponent(jButtonEntrar))
+                .addGap(62, 62, 62)
+                .addComponent(jButtonLimpar)
+                .addGap(418, 418, 418))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(97, 97, 97)
-                                .addComponent(jLabelnome)
-                                .addGap(26, 26, 26))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabelsenha)
-                                .addGap(78, 78, 78)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-                            .addComponent(jTextFieldnome)))
+                        .addGap(139, 139, 139)
+                        .addComponent(jButton1)
+                        .addGap(147, 147, 147)
+                        .addComponent(jLabelResposta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonfuncio)
+                        .addGap(56, 56, 56)
+                        .addComponent(jButtonProf))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
+                        .addGap(216, 216, 216)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(78, 78, 78)
                         .addComponent(jLabel2)
-                        .addGap(29, 29, 29)
-                        .addComponent(jRadioButtonaluno)
-                        .addGap(18, 18, 18)
+                        .addGap(129, 129, 129)
                         .addComponent(jRadioButtonfuncbenefi)
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButtonProf))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(203, 203, 203)
-                            .addComponent(jButton1)
-                            .addGap(26, 26, 26)
-                            .addComponent(jButtonfuncio)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButtonProf))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(385, 385, 385)
-                                        .addComponent(jLabelResposta))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(363, 363, 363)
-                                        .addComponent(jLabel1)))
-                                .addGap(210, 210, 210))
+                                .addGap(162, 162, 162)
+                                .addComponent(jLabelsenha))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(169, 169, 169)
-                                .addComponent(jLabel3))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addGap(238, 238, 238)
-                                .addComponent(jButtonEntrar)
-                                .addGap(57, 57, 57)
-                                .addComponent(jButtonLimpar)))))
-                .addContainerGap(130, Short.MAX_VALUE))
+                                .addGap(85, 85, 85)
+                                .addComponent(jLabelnome)))
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
+                            .addComponent(jTextFieldnome)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(396, 396, 396)
+                        .addComponent(jLabel1)))
+                .addContainerGap(138, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(28, 28, 28)
                 .addComponent(jLabel1)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelnome)
-                            .addComponent(jTextFieldnome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(33, 33, 33)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelsenha)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonEntrar)
-                            .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGap(34, 34, 34)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldnome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelnome))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelsenha)
+                    .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jRadioButtonaluno)
-                    .addComponent(jRadioButtonProf)
-                    .addComponent(jRadioButtonfuncbenefi))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addGap(24, 24, 24)
+                    .addComponent(jRadioButtonfuncbenefi)
+                    .addComponent(jRadioButtonProf))
+                .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButtonfuncio)
-                    .addComponent(jButtonProf))
-                .addGap(86, 86, 86)
-                .addComponent(jLabelResposta)
-                .addContainerGap(125, Short.MAX_VALUE))
+                    .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonEntrar))
+                .addGap(34, 34, 34)
+                .addComponent(jLabel3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabelResposta)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton1)
+                            .addComponent(jButtonfuncio)
+                            .addComponent(jButtonProf))
+                        .addGap(121, 121, 121))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -257,21 +252,23 @@ tipo = null;
  else if (jRadioButtonProf.isSelected()) {
                  tipo = "Professor";      
                         }
-        if (nome.equals("user") && senha.equals("12345") && (tipo = "Aluno")){
+        if (nome.equals("user") && senha.equals("12345") && (tipo.equals("Aluno"))){
             jLabelResposta.setText("Bem-Vindo");
             new JFrameTelaAluno().setVisible(true);
-        }if (nome.equals("user") && senha.equals("12345") && (tipo = "Funcionário do benefício")){
+        }if (nome.equals("user") && senha.equals("12345") && (tipo.equals("Funcionário do benefício"))){
             jLabelResposta.setText("Bem-Vindo");
             new JFrameTelaFuncbenefi().setVisible(true);
         }
-        else if{
-            jLabelResposta.setText("Usuário ou senha incorretos");
+        else if(nome.equals("user") && senha.equals("12345") && (tipo.equals("Professor"))){
+           jLabelResposta.setText("Bem-Vindo");
+            new JFrameTelaProf().setVisible(true);
         }
     }//GEN-LAST:event_jButtonEntrarActionPerformed
 
     private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
         jTextFieldnome.setText(null);
         jPasswordFieldsenha.setText(null);
+      
     }//GEN-LAST:event_jButtonLimparActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
