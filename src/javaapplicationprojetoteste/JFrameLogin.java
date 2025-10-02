@@ -39,11 +39,11 @@ public class JFrameLogin extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButtonfuncio = new javax.swing.JButton();
         jButtonProf = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelTitulo = new javax.swing.JLabel();
         jRadioButtonaluno = new javax.swing.JRadioButton();
         jRadioButtonProf = new javax.swing.JRadioButton();
         jRadioButtonfuncbenefi = new javax.swing.JRadioButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelTipo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -117,8 +117,8 @@ public class JFrameLogin extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jLabel1.setText("Login");
+        jLabelTitulo.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabelTitulo.setText("Login");
 
         buttonGroupfuncao.add(jRadioButtonaluno);
         jRadioButtonaluno.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -132,8 +132,8 @@ public class JFrameLogin extends javax.swing.JFrame {
         jRadioButtonfuncbenefi.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jRadioButtonfuncbenefi.setText("Funcionário do benefício");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel2.setText("Tipo de usuário:");
+        jLabelTipo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabelTipo.setText("Tipo de usuário:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -150,20 +150,21 @@ public class JFrameLogin extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(139, 139, 139)
-                        .addComponent(jButton1)
-                        .addGap(147, 147, 147)
-                        .addComponent(jLabelResposta)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonfuncio)
-                        .addGap(56, 56, 56)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(385, 385, 385)
+                                .addComponent(jLabelResposta)
+                                .addGap(209, 209, 209))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jButton1)
+                                .addGap(43, 43, 43)
+                                .addComponent(jButtonfuncio)
+                                .addGap(87, 87, 87)))
                         .addComponent(jButtonProf))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(216, 216, 216)
-                        .addComponent(jLabel3))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(78, 78, 78)
-                        .addComponent(jLabel2)
+                        .addComponent(jLabelTipo)
                         .addGap(129, 129, 129)
                         .addComponent(jRadioButtonfuncbenefi)
                         .addGap(18, 18, 18)
@@ -181,16 +182,19 @@ public class JFrameLogin extends javax.swing.JFrame {
                             .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
                             .addComponent(jTextFieldnome)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(396, 396, 396)
-                        .addComponent(jLabel1)))
+                        .addGap(405, 405, 405)
+                        .addComponent(jLabelTitulo))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(172, 172, 172)
+                        .addComponent(jLabel3)))
                 .addContainerGap(138, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel1)
-                .addGap(34, 34, 34)
+                .addGap(27, 27, 27)
+                .addComponent(jLabelTitulo)
+                .addGap(35, 35, 35)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldnome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelnome))
@@ -200,7 +204,7 @@ public class JFrameLogin extends javax.swing.JFrame {
                     .addComponent(jPasswordFieldsenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLabelTipo)
                     .addComponent(jRadioButtonaluno)
                     .addComponent(jRadioButtonfuncbenefi)
                     .addComponent(jRadioButtonProf))
@@ -208,20 +212,16 @@ public class JFrameLogin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonEntrar))
-                .addGap(34, 34, 34)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabelResposta)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButtonfuncio)
-                            .addComponent(jButtonProf))
-                        .addGap(121, 121, 121))))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButtonfuncio)
+                    .addComponent(jButtonProf))
+                .addGap(10, 10, 10)
+                .addComponent(jLabelResposta)
+                .addContainerGap(140, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -325,10 +325,10 @@ tipo = null;
     private javax.swing.JButton jButtonLimpar;
     private javax.swing.JButton jButtonProf;
     private javax.swing.JButton jButtonfuncio;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelResposta;
+    private javax.swing.JLabel jLabelTipo;
+    private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JLabel jLabelnome;
     private javax.swing.JLabel jLabelsenha;
     private javax.swing.JPanel jPanel1;
